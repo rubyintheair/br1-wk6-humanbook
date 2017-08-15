@@ -2,4 +2,4 @@ deployment:
   staging:
     branch: lab6.2
     heroku:
-      appname: Libra
+      appname: arcane-waters-97896
