@@ -14,5 +14,9 @@ RSpec.describe User, type: :model do
     it "has a valid image_url_or_default" do 
       expect(@user.image_url_or_default).to eq "http://lorempixel.com/128/128/sports/Fake-User/"
     end 
+
+    it "User got correct email" do 
+      expect(@user.email).to eq "123@gmail.com"
+    end 
   end 
 end
