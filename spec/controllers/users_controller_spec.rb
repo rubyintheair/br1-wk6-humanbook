@@ -6,7 +6,7 @@ RSpec.describe UsersController, type: :controller do
       it "returns a success respone" do 
         user = User.create name: "Quy", email: "quy123@gmail.com", password: "1234"
         get :index, params: {}, session: {user_id: user.id}
-        expect(response).to be_success
+        expect(response).to be_success   
       end 
     end 
 
